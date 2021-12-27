@@ -1,0 +1,10 @@
+{
+    "params":
+    {
+        "upload_folder":"image folder path for user upload",
+        "email_id":"admin_email_id@gmail.com",
+        "email_passwd":"Admin_password",
+        "website_name":"Jaipur Guide",
+        "image_folder": "image folder path for main website"
+    }
+}

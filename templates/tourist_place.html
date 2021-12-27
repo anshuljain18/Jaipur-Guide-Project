@@ -1,0 +1,47 @@
+{% extends "./layout.html" %}
+
+{% block heading %}{{heading}}{% endblock %}
+
+{% block body %}
+
+    <header class="header-sec my-container">
+        <img src="{{ url_for('static', filename='img/side1.jpg')}}" alt="image" style="display: inline-block;">
+        <h1 class="heading my-container">{{ heading|title }}</h1>
+        <img src="{{ url_for('static', filename='img/side2.jpg')}}" alt="image" style="display: inline-block;">
+    </header>
+
+    <section class="showcase">
+        <!-- id="main" -->
+        <div class="my-container"> 
+            {% for info in information %}
+            <article class="row place1"> 
+                <div class="img-box">
+                    <img src="{{ url_for('static', filename= info.image) }}" alt="image">
+                </div>
+                <div class="text-box">
+                    <h2>{{ info.name }}</h2>
+                    <P>
+                        {{ info.desc }}
+                    </P>
+
+                    {% if more_btn %}
+                    <div class="d-grid gap-2 col-md-6">
+                        <a class="btn btn-outline-danger btn-md" href="{{ url_for('detail', name=info.name) }}" role="button">More About {{info.name|title}}</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+
+            <article class="addplace" style="text-align: center; background-color: white;">
+                <h1>Help Us to Grow!!</h1>
+                <p>If you know some place that are amazing to visit. So let other people see that.</p>
+                <div class="d-grid gap-2 col-md-6 mx-auto">
+                    <a class="btn btn-outline-danger btn-md" href="{{ url_for('add') }}" role="button">Add Place</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+{% endblock body %}

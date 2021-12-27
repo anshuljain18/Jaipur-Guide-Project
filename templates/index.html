@@ -1,0 +1,153 @@
+{% extends "layout.html" %}
+
+{% block heading %}Home{% endblock %}
+
+{% block body %}
+
+    <header style="background-size: contain; background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(./static/img/bg-design.jpeg);">
+      <div class="my-container" style="display: flex; padding: 20px 0;">
+          <img src="{{ url_for('static', filename='img/extra1.jpeg')}}" alt="image">
+          <div class="index-heading" style="flex-grow: 8;">
+              <div class="jaipur-title">
+                  <img src="{{ url_for('static', filename='img/elephant1.png') }}" alt="elephant image">
+                  <h1 class="title-name">Jaipur</h1>
+                  <img src="{{ url_for('static', filename='img/elephant2.png') }}" alt="elephant image">
+              </div>
+              <h3 class="heading">-- The  Pink City --</h3>
+              <h3 class="heading" style="padding-top: 12px;"> पधारो म्हारे देश </h3>
+          </div>  
+          <img src="{{ url_for('static', filename='img/extra.jpeg')}}" alt="image">
+      </div>  
+    </header>
+
+    <section class="my-container">
+        <p class="history">
+            Jaipur is the capital of Rajasthan which was founded by Maharaja Sawai Jai Singh II on November 18, 1727. Maharaja Sawai Jai Singh II was a Kachwaha Rajput who ruled Jaipur from 1699-1743. Prior to Jaipur, his capital was Amber which is 11 km away from Jaipur. With the increase of population, the king felt the need to shift the capital city. Another reason to shift the capital was the scarcity of water in Amber region.
+            <br><br>
+            Jaipur is believed to be the first planned city of India and also that the king took a lot of interest in designing this city of victory. Several books on architecture and several architects were consulted before preparing the layout of Jaipur city.
+            <br><br>
+            Jai Singh was concerned about the security of the cityand hence, he utilised his scientific and cultural interests to build it.
+            <br><br>
+            Vidyadhar Bhattacharya, a Brahmin scholar in Mathematics and Science from Bengal, assisted Jai Singh to design the city’s architecture. Vidyadhar referred to ancient Indian literature on astronomy, books of Ptolemy and Euclid in order to help the king.
+            <br><br>
+            The construction of the city started in 1727 and it took around 4 years for the completion of the major palaces and roads. Principles of Vastu Shastra were greatly followed while designing the city.
+            <br><br>
+            Jaipur city was divided into nine blocks two of which consisted of the state buildings and palaces. The remaining seven blocks were allotted to the general public to live in. From the security point of view, huge walls were constructed around the city along with seven strong gates. It is believed that the architecture of the city was the best at that time in the Indian subcontinent.
+            <br><br>
+            In 1878, Prince of Wales visited Jaipur city. The whole city was painted with Pink colour to welcome the prince. Sincethen, the name “Pink City” came into existence. Continuing the trend and keeping the charm of the historic era, all the state buildings and historical places of Jaipur city are painted with Pink colour.
+            <br><br>
+            Jaipur city is famous for its architecture and rich culture -- enough to attract the tourists from different parts of the globe.
+        </p>
+    </section>
+
+    <section style="background-color: #FFEDED; padding-bottom: 50px;">
+
+        <div class="my-container">
+
+          <img src="{{ url_for('static', filename='img/bg-img2.png') }}" class="img-divider" alt="next section">
+          <h2 class="sub-title">--- Explore the City ---</h2>
+
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+              
+              <!-- Monuments -->
+              <div class="col">
+                  <a href="{{ url_for('categorize', category='monuments') }}">
+                  <div class="card h-100">
+                      <img src="{{ url_for('static', filename='img/hm2.jpg') }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Monuments</h5>
+                      </div>
+                  </div>
+                  </a>
+              </div>
+              
+              <!-- Temples -->
+              <div class="col">
+                  <a href="{{ url_for('categorize', category='temples') }}"> 
+                  <div class="card h-100">
+                    <img src="{{ url_for('static', filename='img/bm1.jpg') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Temples</h5>
+                    </div>
+                  </div>
+                  </a>
+              </div>
+  
+              <!-- Parks / Gardens -->
+              <div class="col">
+                  <a href="{{ url_for('categorize', category='gardens') }}">
+                  <div class="card h-100">
+                    <img src="{{ url_for('static', filename='img/Sisodia Rani ka Bagh.jpg') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Parks / Gardens</h5>
+                    </div>
+                  </div>
+                  </a>
+              </div>
+  
+              <!-- Museums -->
+              <div class="col">
+                  <a href="{{ url_for('categorize', category='museums') }}">
+                  <div class="card h-100">
+                    <img src="{{ url_for('static', filename='img/albert hall.jpeg') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Museums</h5>
+                    </div>
+                  </div>
+                  </a>
+              </div>
+              
+              <!-- Nature / Wildlife -->
+              <div class="col">
+                  <a href="{{ url_for('categorize', category='wildlife') }}">
+                  <div class="card h-100">
+                    <img src="{{ url_for('static', filename='img/safari-park.jpg') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nature / Wildlife</h5>
+                    </div>
+                  </div>
+                  </a>
+              </div>
+  
+              <!-- Shopping -->
+              <div class="col">
+                <a href="{{ url_for('categorize', category='shopping') }}">
+                <div class="card h-100">
+                  <img src="{{ url_for('static', filename='img/image5.jpeg') }}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Shopping</h5>
+                  </div>
+                </div>
+                </a>
+            </div>
+
+            <!-- Food Delicacy -->
+            <div class="col">
+              <a href="{{ url_for('categorize', category='food') }}">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/best-thali.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Food Delicacies</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <!-- Festival -->
+            <div class="col">
+              <a href="{{ url_for('categorize', category='festivals') }}">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/festival.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Festivals</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+
+{% endblock %}

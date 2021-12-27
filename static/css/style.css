@@ -1,0 +1,336 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #E6A5A9;
+}
+
+a { 
+    text-decoration: none;
+}
+
+.my-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2.sub-title {
+    text-align: center;
+    font-family: 'DM Serif Display';
+    padding-bottom: 30px;
+    color: #4D1027;
+}
+
+img.img-divider {
+    height: 100px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-outline-danger{
+    color: #4D1027;
+    border-color: #4D1027;
+}
+
+.btn-outline-danger:hover{
+    background-color: #4D1027;
+}
+/* ------------------------------------ Navigation bar ----------------------------------*/
+
+.navbar {
+    color: #4D1027;
+    /* ./img/bg6.jpg */
+    background-image: linear-gradient(rgba(255,105,180,0.4), rgba(255,192,203,0.5)),url("/static/img/bg6.jpg");
+    height: 50px;
+    background-position: bottom;
+}
+
+.navbar-nav {
+    position: absolute;
+    right: 5%;
+}
+
+.nav-item .nav-link {
+    font-weight: 450;
+    font-size: 20px;
+}
+
+.nav-item .nav-link:hover {
+    background-color: white;
+    color: rgb(211, 197, 197);
+}
+
+.navbar ul.dropdown-menu {
+    background-color: #FFEDED;
+}
+
+/* ------------------------------------ Home Page ------------------------------------------- */
+header .index-heading {
+    flex-grow: 5;
+    margin: auto;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    color: #4D1027;
+}
+
+.jaipur-title {
+    display: flex;
+    position: relative;
+    left: 180px;
+}
+
+.jaipur-title img {
+    height: 80px;
+}
+
+.jaipur-title .title-name {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 0 50px;
+}
+
+section .history {
+    text-align: center;
+    padding: 30px 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    word-spacing: 4px;
+}
+
+img.card-img-top {
+    height: 200px;
+}
+
+h5.card-title {
+    color: black;
+    text-align: center;
+}
+
+.col .card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgb(0 0 0 / 50%);  
+}
+
+div.col a {
+    text-decoration: none;
+}
+
+/* ------------------------------------- Facts Section ------------------------------------ */
+h3.fact-heading {
+    font-family: 'DM Serif Display', serif;
+}
+
+p.fact-desc {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: justify;
+}
+
+article.bg-1 {
+    background-color: #FFEDED;
+    padding: 40px;
+}
+
+article.bg-2 {
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+/* ----------------------------------- showcase section ----------------------------------- */
+.header-sec {
+    display: flex;
+}
+
+.header-sec .heading {
+    margin: auto;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+.showcase{
+    background-color:#FFEDED;
+    padding: 100px 0;
+}
+
+.showcase article.row{
+    height: 350px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px 5px #E6A5A9;
+}
+
+.showcase article.row .text-box h2{
+    /* text-transform: uppercase; */
+    font-family: 'DM Serif Display', serif;
+}
+
+.place1{
+    margin-bottom: 5rem;
+}
+
+.place1 .img-box{
+    float: left;
+    width: 50%;
+}
+
+.place1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.showcase article.row .img-box{
+    height: 100%;
+    padding: 0;
+}
+
+.showcase article.row .text-box{
+    padding: 30px;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: justify;
+}
+
+.showcase article.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.showcase article.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.addplace {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 20px 5px #E6A5A9;
+}
+
+/* **************************** Contact page ********************************** */
+.contact-heading {
+    text-align: center; 
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    color: #4D1027;
+}
+.form-content {
+    background-color: pink;
+    height: 650px;
+    width: 700px;
+    padding: 55px 150px 70px;
+    position: absolute;
+    right: 50px;
+    margin: 50px;
+}
+
+.info-card {
+    font-family: 'DM Serif Display', serif;
+    padding: 30px 20px;
+    background-color: white;
+    height: 220px;
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.card-1 {
+    top: 150px;
+    right: 700px;
+}
+
+.card-2 {
+    top: 420px;
+    right: 700px;
+}
+
+.card-3 {
+    top: 420px;
+    left: 90px;
+}
+
+.card-4 {
+    top: 150px;
+    left: 90px;
+}
+
+i.card-icon {
+    font-size: 60px;
+    color: pink;
+    padding-bottom: 20px;
+}
+
+
+
+/* **************************** Add Place Page ********************************** */
+/* input[type=file]::file-selector-button {
+    border: 2px solid #6c5ce7;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #a29bfe;
+    transition: 1s;
+    text: "Choose Image";
+} */
+.add-section {
+    background-image: url(/static/img/1234.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+input:focus{
+    outline: 2px solid #4D1027;     /* oranges! yey */
+}
+
+.add-form {
+    margin: 50px 0;
+    background-color: rgba(100, 100, 100, 0.5);
+    height: fit-content;
+    padding: 50px 30px;
+    border-radius: 20px;
+    width: 50%;
+}
+
+/* .add-video {
+    width: 100%;
+} */
+
+/* ******************** for small screen view **************************** */
+@media (max-width: 500px){
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(min-width:501px) and (max-width:760px){
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+

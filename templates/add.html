@@ -1,0 +1,80 @@
+{% extends "./layout.html" %}
+
+{% block heading %}Add Places{% endblock %}
+
+{% block body %}
+
+    <section style="background-image: url('/static/img/1234.jpeg');" class="add-section">
+         <!-- style="background-color: #4D1027; text-align: center; padding: 50px;" -->
+        <div class="my-container mx-auto" style="padding: 50px;">
+
+            <h1 class="contact-heading">Add Place</h1>
+            <div class="add-form mx-auto" style="width: 60%;">
+                <form action="/add" method="post" enctype="multipart/form-data">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="username" placeholder="username" required autocomplete="off">
+                        <label for="floatingText">User Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" name="email" placeholder="name@example.com" required autocomplete="off">
+                        <label for="floatingText">E-mail</label>
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="place_name" placeholder="Place Name" required autocomplete="off">
+                        <label for="floatingText">Place Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="address" placeholder="Username" required autocomplete="off">
+                        <label for="floatingText">Address</label>
+                    </div>
+
+                    <div class="form-floating">
+                        <select class="form-select" name="category" id="floatingSelect" aria-label="Floating label select example">
+                            <option value="0" selected disabled></option>
+                            <option value="monumments">Monuments</option>
+                            <option value="temples">Temples</option>
+                            <option value="gardens">Parks / Gardens</option>
+                            <option value="museums">Museums</option>
+                            <option value="wildlife">Nature / Wildlife</option>
+                            <option value="shopping">Shopping</option>
+                            <option value="food">Food Delicacy</option>
+                            <option value="festivals">Festivals</option>
+                        </select>
+                        <label for="floatingSelect">Select Category</label>
+                    </div>
+
+                    <div class="form-floating">
+                        <textarea class="form-control" name="description" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"  required></textarea>
+                        <label for="floatingTextarea2">Description</label>
+                    </div>
+
+                    <div class="d-flex">
+                        <span><label for="file" class="btn input-group-text" style="background-color: #e9ecef; border-radius: 0.25rem 0 0 0.25rem; height: calc(3.5rem + 2px); padding: 15px;">Add Image</label></span>
+                        <span><input id="file" name="file" style="display: none;" type="file" onchange="readURL(this);" required></span>
+                        <!-- <img src="#" alt="your image" id="upload-img"> -->
+                        <span style="width: -webkit-fill-available;"><input class="form-control" type="text" value="" id="upload-file" aria-label="Disabled input example" style="background-color: white; border-radius: 0 0.25rem 0.25rem 0; height: calc(3.5rem + 2px);" disabled readonly></span>
+                    </div>    
+                    <br>
+                    <div class="d-grid gap-2 col-md-6 mx-auto">
+                        <button class="btn btn-primary btn-md" type="submit">Add Place</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+{% endblock %}
+
+{% block script %}
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                let file = input.files[0];
+                let filename = file.name;
+                $("#upload-file").attr("value", filename);
+            }
+        }
+    </script>
+
+{% endblock %}
