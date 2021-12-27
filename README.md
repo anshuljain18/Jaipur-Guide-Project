@@ -8,26 +8,26 @@ Planned by Vidyadhar Bhattacharya, Jaipur holds the distinction of being the fir
 Jaipur traces back its origins to 1727 when it was established by Jai Singh II, the Raja of Amber. He shifted his capital from Amber to the new city because of the rapidly-growing population and an increasing water scarcity. Noted architect Vidyadhar Bhattacharya used the established principles of Vastu Shastra to build the city.
 
 #### Description:
-
+<pre>
 jaipur guide<br>
-    |<br>
+    |
     |--> static<br>
-    |       |--> css --> style.css<br>
-    |       |--> img --> all images<br>
-    |<br>
-    |--> templates<br>
-    |       |--> add.html<br>
-    |       |--> contact.html<br>
-    |       |--> facts.html<br>
-    |       |--> index.html<br>
-    |       |--> layout.html<br>
-    |       |--> more_info.html<br>
-    |       |--> tourist_place.html<br>
-    |<br>
-    |--> application.py<br>
+    |       |--> css --> style.css
+    |       |--> img --> all images
+    |
+    |--> templates
+    |       |--> add.html
+    |       |--> contact.html
+    |       |--> facts.html
+    |       |--> index.html
+    |       |--> layout.html
+    |       |--> more_info.html
+    |       |--> tourist_place.html
+    |
+    |--> application.py
     |--> config.json<br>
-    |--> Travel.db<br>
-
+    |--> Travel.db
+<pre>
 I used flask and sqlite3 database for backend and html, CSS and JavaScript for frontend. This website will guide tourists to find and locate amazing places to visit in Jaipur. I have categorized places to make interface user friendly so that they can bifurcate according to their preferences. Description, history and facts about places which makes place more interesting to visit. People can find best and suitable time to visit places. People can able to explore some hidden gems of Jaipur.
 This site will provide collective knowledge about a place giving major information to users. With collection of photo captured at that location which make this website more useful than other related.
 
